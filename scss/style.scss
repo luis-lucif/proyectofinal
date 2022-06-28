@@ -1,24 +1,31 @@
 
-//galeria//
+
 
 @import "utilities/variablesgaleria";
+@import "utilities/variablesbio";
+@import "utilities/variablescontacto";
+@import "utilities/variablesbibliografia";
+@import "utilities/variablesfooter";
+@import "utilities/variablesindex";
+@import "utilities/variablesnavbar";
 
+//galeria//
 
 .body-galeria{
     background-color:$color-body ;
 }
 
 .contenedor-galeria{
-    width: $tamaño-galeria;
+    width: $tamano-galeria;
     margin: auto;
-    color: $color-contenedor;
+    
     
 }
 
 .img-galeria{
-    width: $tamaño-galeria;
-    border-radius: $tamaño-borde;
-    border: $tamaño-borde solid $color-borde;
+    width: $tamano-galeria;
+    border-radius: $tamano-borde;
+    border: $tamano-borde solid $color-borde;
     transition: 0.5s;
     object-fit: cover;
 
@@ -31,7 +38,7 @@
 }
 
 .galeria-columna{
-    margin: $tamaño-borde;
+    margin: $tamano-borde;
 }
 
 .galeria .contenedor-galeria{
@@ -66,3 +73,215 @@
     }
 }
 
+
+/* formulario */
+
+.body-formulario{
+    background-image: url(/img/contacto.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form{
+    width: $tamano-form;
+    margin: auto;
+    background: $background-form;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: $margin-form;
+    border-radius: 10px;
+
+}
+
+.h2-formulario{
+    color:  $color-form;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: $margin-form;
+}
+
+input, textarea{
+    width: $width-form;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: $width-form;
+}
+
+#boton-formulario{
+    background-color: $color-form ;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+#boton-formulario:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width:480px){
+    form{
+        width: $width-form;
+    }
+}
+
+/*bibliografia*/
+
+.card{
+    background-color:$color-biblio;
+    border-color: $border-color-biblio;
+    border: $border-biblio;
+        
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card-text{
+    @include card-text;
+}
+
+.body-bibliografia{
+    background: $background-bilbio;
+    background: $gradient-biblio;
+}
+    
+
+/* bio */
+
+.container-bio{
+    display: flex;
+    background-color: rgb(12, 96, 34);
+}
+
+.text-bio{
+   @include text-bio;
+    
+}
+
+@media screen and (max-width:580px) {
+    .container-bio {
+        color: $color-footer;
+
+    }
+    .container-bio img{
+        position: absolute;
+        @include container-bio;
+        
+    }
+
+    .container-bio .text-bio{
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.4);
+
+        
+    }
+  
+}
+
+
+/* footer */
+
+.pie-pagina{
+   @include pie-pagina
+}
+
+.img-footer{
+   @include img-footer;
+    
+}
+
+.h2-footer{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.fa{
+    @include fa;
+}
+
+@media screen and (max-width:600px){
+    .pie-pagina{
+
+   background-color: $back-color-footer;
+          
+    }
+    .img-footer{
+       margin-right: 0;
+       margin-left: -100px;
+       
+    }
+    .fa{
+       @include flex-footer;
+    
+    }
+}
+
+
+   
+
+
+
+/* index */
+  
+      
+.card-img-top-index{
+    @extend %card-img-top-index;
+   
+}
+
+.card-body{
+   @extend %card-body;
+
+}
+
+.card-index{
+   @extend %card-index;
+       
+}
+
+
+/* nav-bar */
+
+.navbar{
+    margin-top: -1em;
+   
+  }
+  
+   .navbar-nav .nav-link:after{
+        @include navbar-nav;
+      
+  }
+  
+   .navbar-nav .nav-link:hover::after{
+      width: 100%;
+  }
+  
+   .navbar-nav .nav-link:hover{
+        @include nav-linkhover;
+  
+      
+  }
+  
+  @media screen and (max-width: 990px){
+          .navbar{
+             text-align: center;
+             margin-top: -1em;
+          }
+  }
+  
+  

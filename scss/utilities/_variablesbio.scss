@@ -1,0 +1,21 @@
+//bio//
+
+$color-bio:rgb(12, 96, 34);
+$margin-bio: 30vh;
+$size-bio:20px;
+$color-media-bio: rgb(0, 0, 0);
+$back-color-bio:rgba(0,0,0,0.4);
+
+@mixin container-bio {
+    width: 250px;
+    height: 400px;
+    margin-top: 30px;
+    
+}
+
+@mixin text-bio{
+    margin-top: 30vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

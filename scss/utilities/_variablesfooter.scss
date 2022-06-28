@@ -1,0 +1,34 @@
+$back-color-footer:rgb(5, 109, 33);
+$color-footer:rgb(0, 0, 0);
+$back-color-footer2:rgb(12, 96, 34);
+$width-footer: 250px;
+$margin-right-footer: 100px;
+
+
+
+
+@mixin pie-pagina{
+    background-color:$back-color-footer ;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px
+}
+
+@mixin flex-footer{
+    display: flex;
+    flex-direction: initial;
+    font-size: 20px;
+}
+
+@mixin fa{
+    font-size: 200%;
+    margin: 20px;
+    color: #000000;
+    text-decoration: none
+}
+
+@mixin img-footer{
+    width: $width-footer;
+    margin-right: $margin-right-footer;
+}
