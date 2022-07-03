@@ -9,69 +9,10 @@
 @import "utilities/variablesindex";
 @import "utilities/variablesnavbar";
 
-//galeria//
-
-.body-galeria{
-    background-color:$color-body ;
-}
-
-.contenedor-galeria{
-    width: $tamano-galeria;
-    margin: auto;
-    
-    
-}
-
-.img-galeria{
-    width: $tamano-galeria;
-    border-radius: $tamano-borde;
-    border: $tamano-borde solid $color-borde;
-    transition: 0.5s;
-    object-fit: cover;
 
 
 
-}
 
-.img-galeria:hover{
-    transform: scale(1.2);
-}
-
-.galeria-columna{
-    margin: $tamano-borde;
-}
-
-.galeria .contenedor-galeria{
-    display: grid;
-}
-
-@media screen and (min-width:520px ){
-    .galeria .contenedor-galeria{
-        grid-template-columns: repeat(2,50%);
-    }
-}
-
-@media screen and(min-width:728px){
-    .galeria .contenedor-galeria{
-        grid-template-columns: repeat(3,33.3%);
-    }
-}
-
-@media screen and(min-width:1024px){
-    .galeria .contenedor-galeria{
-        grid-template-columns: repeat(4,25%);
-    }
-
-    .contenedor-galeria{
-        width: 1024px;
-    }
-}
-
-@media screen and(min-width:1200px){
-    .contenedor-galeria{
-        width: 1200px;
-    }
-}
 
 
 /* formulario */
@@ -142,7 +83,12 @@ textarea{
     background-color:$color-biblio;
     border-color: $border-color-biblio;
     border: $border-biblio;
+    
         
+}
+
+.card-img{
+    height: 350px;
 }
 
 .card:hover{
@@ -155,42 +101,155 @@ textarea{
 }
 
 .body-bibliografia{
-    background: $background-bilbio;
-    background: $gradient-biblio;
+    background-image: url(/img/bobliografia2.jpg);
+    
+}
+
+@media screen and (max-width: 520px) {
+    
+    .row{
+        margin-left: 7rem;
+        margin-top: 1rem;
+        
+    }
+
 }
     
 
 /* bio */
 
-.container-bio{
+.container-bio1{
     display: flex;
-    background-color: rgb(12, 96, 34);
+    background-image: url(/img/biowall1.jpg);
+    
+    
+}
+
+.container-bio2{
+    display: flex;
+    background-image: url(/img/biowall2.jpg);
+    
+}
+
+.container-bio3{
+    display: flex;
+    background-image: url(/img/biowall3.jpg);
+    
 }
 
 .text-bio{
    @include text-bio;
+   background-color:rgba(0,0,0,0.4);
+   color: rgb(3, 134, 38);
     
 }
 
 @media screen and (max-width:580px) {
-    .container-bio {
+    .container-bio1  {
         color: $color-footer;
 
     }
-    .container-bio img{
+    .container-bio1 img{
         position: absolute;
         @include container-bio;
         
     }
 
-    .container-bio .text-bio{
+    .container-bio1 .text-bio{
         text-transform: uppercase;
         background-color: rgba(0,0,0,0.4);
+        color: rgb(3, 134, 38);
 
         
     }
   
 }
+
+@media screen and (max-width:580px) {
+    .container-bio2  {
+        color: $color-footer;
+        
+    }
+    .container-bio2 img{
+        position: absolute;
+        @include container-bio;
+        
+    }
+
+    .container-bio2 .text-bio{
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.4);
+        color: rgb(3, 134, 38)
+
+        
+    }
+  
+}
+
+@media screen and (max-width:580px) {
+    .container-bio3  {
+        color: $color-footer;
+        
+    }
+    .container-bio3 img{
+        position: absolute;
+        @include container-bio;
+        
+    }
+
+    .container-bio3 .text-bio{
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.4);
+        color: rgb(3, 134, 38)
+
+        
+    }
+  
+}
+
+//galeria//
+/*galeria*/
+
+.body-galeria{
+    background-image: url(/img/gwall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .img-galeria{
+    
+    width: 100%;
+    height: 320px;
+    box-shadow: 10px 5px rgba(0,0,0,0.4);
+    
+  }
+
+  .img-galeria:hover{
+    transform: scale(1.4);
+    transition: 1s;
+  }
+
+  .swiper-wrapper{
+    margin-bottom: 1rem;
+  }
 
 
 /* footer */

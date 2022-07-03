@@ -1,4 +1,37 @@
+#boton-formulario:hover {
+  transition: 0.5s; }
+
+.fa:hover {
+  transform: scale(1.6);
+  color: #06ce0d;
+  transition: 1s; }
+
 /*index*/
+.header-index {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.banner-text {
+  padding: 0 30px;
+  text-align: center; }
+
+.banner-text h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #0c6022;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 10px; }
+
+.banner-text p {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 10px #0c6022; }
+
 .card-index {
   background-color: #0c6022;
   display: flex;
@@ -12,47 +45,6 @@
 .card-body {
   background-color: #0c6022;
   text-align: center; }
-
-.body-galeria {
-  background-color: #01621d; }
-
-.contenedor-galeria {
-  width: 100%;
-  margin: auto; }
-
-.img-galeria {
-  width: 100%;
-  border-radius: 5px;
-  border: 5px solid #077714;
-  transition: 0.5s;
-  object-fit: cover; }
-
-.img-galeria:hover {
-  transform: scale(1.2); }
-
-.galeria-columna {
-  margin: 5px; }
-
-.galeria .contenedor-galeria {
-  display: grid; }
-
-@media screen and (min-width: 520px) {
-  .galeria .contenedor-galeria {
-    grid-template-columns: repeat(2, 50%); } }
-
-@media screen and (min-width: 728px) {
-  .galeria .contenedor-galeria {
-    grid-template-columns: repeat(3, 33.3%); } }
-
-@media screen and (min-width: 1024px) {
-  .galeria .contenedor-galeria {
-    grid-template-columns: repeat(4, 25%); }
-  .contenedor-galeria {
-    width: 1024px; } }
-
-@media screen and (min-width: 1200px) {
-  .contenedor-galeria {
-    width: 1200px; } }
 
 /* formulario */
 .body-formulario {
@@ -109,6 +101,9 @@ textarea {
   border-color: #000000;
   border: 5px solid; }
 
+.card-img {
+  height: 350px; }
+
 .card:hover {
   transform: scale(1.1);
   transition: 1s; }
@@ -118,31 +113,105 @@ textarea {
   font-weight: bold; }
 
 .body-bibliografia {
-  background: #022d0e;
-  background: linear-gradient(90deg, #022d0e 15%, #022d0e 33%, #0e6613 45%, #074610 59%, #189a17 72%, #022d0e 90%, #25d61c 100%, #148215 100%, #25d61c 100%, #26da1d 100%, #27de1d 100%, #00240d 100%, #04370f 100%, #00d4ff 100%); }
+  background-image: url(/img/bobliografia2.jpg); }
+
+@media screen and (max-width: 520px) {
+  .row {
+    margin-left: 7rem;
+    margin-top: 1rem; } }
 
 /* bio */
-.container-bio {
+.container-bio1 {
   display: flex;
-  background-color: #0c6022; }
+  background-image: url(/img/biowall1.jpg); }
+
+.container-bio2 {
+  display: flex;
+  background-image: url(/img/biowall2.jpg); }
+
+.container-bio3 {
+  display: flex;
+  background-image: url(/img/biowall3.jpg); }
 
 .text-bio {
   margin-top: 30vh;
   text-align: center;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #038626; }
 
 @media screen and (max-width: 580px) {
-  .container-bio {
+  .container-bio1 {
     color: black; }
-  .container-bio img {
+  .container-bio1 img {
     position: absolute;
     width: 250px;
     height: 400px;
     margin-top: 30px; }
-  .container-bio .text-bio {
+  .container-bio1 .text-bio {
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.4); } }
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #038626; } }
+
+@media screen and (max-width: 580px) {
+  .container-bio2 {
+    color: black; }
+  .container-bio2 img {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    margin-top: 30px; }
+  .container-bio2 .text-bio {
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #038626; } }
+
+@media screen and (max-width: 580px) {
+  .container-bio3 {
+    color: black; }
+  .container-bio3 img {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    margin-top: 30px; }
+  .container-bio3 .text-bio {
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #038626; } }
+
+/*galeria*/
+.body-galeria {
+  background-image: url(/img/gwall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%; }
+
+.img-galeria {
+  width: 100%;
+  height: 320px;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.4); }
+
+.img-galeria:hover {
+  transform: scale(1.4);
+  transition: 1s; }
+
+.swiper-wrapper {
+  margin-bottom: 1rem; }
 
 /* footer */
 .pie-pagina {

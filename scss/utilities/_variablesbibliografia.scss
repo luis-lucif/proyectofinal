@@ -4,9 +4,12 @@ $color-biblio: rgb(5, 109, 33) ;
 $border-color-biblio:#000000;
 $border-biblio: 5px solid;
 $background-bilbio:rgb(2,45,14);
-$gradient-biblio: linear-gradient(90deg, rgba(2,45,14,1) 15%, rgba(2,45,14,1) 33%, rgba(14,102,19,1) 45%, rgba(7,70,16,1) 59%, rgba(24,154,23,1) 72%, rgba(2,45,14,1) 90%, rgba(37,214,28,1) 100%, rgba(20,130,21,1) 100%, rgba(37,214,28,1) 100%, rgba(38,218,29,1) 100%, rgba(39,222,29,1) 100%, rgba(0,36,13,1) 100%, rgba(4,55,15,1) 100%, rgba(0,212,255,1) 100%);
+
 
 @mixin card-text{
     text-align: center;
     font-weight: bold;
 }
+
+
+
