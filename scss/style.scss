@@ -96,146 +96,7 @@
         
     }
 
-    .conteiner__index{
-        background: linear-gradient(to right, #b3eb92, #096100 );
-        padding: 10px;
-    }
-
     
-    .card__index{
-        position: relative;
-        width: 200px;
-        height: 350px;
-        margin: auto;
-        margin-top: 3em;
-        margin-bottom: 2em;
-        border-radius: 20px;
-        transition: 0.5s;
-        transition-delay: 0.5s;
-        display: flex;
-        background: linear-gradient(to left, #b3eb92, #096100 );
-        
-    }
-    
-    
-    
-    .card__index:hover{
-        width: 600px;
-        transition-delay: 0s;
-    }
-    
-    .card__index .circle{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
-        border-radius: 20px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .card__index .circle::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--clr);
-        clip-path: circle(120px at center);
-        transition: 0.5s;
-    }
-    
-    .card__index:hover .circle::before{
-        clip-path: circle(400px at center);
-    }
-    
-    .card__index .circle .logo__index{
-        position: relative;
-        width: 200px;
-        transition: 0.5s;
-        transition-delay: 0.5s;
-    }
-    
-    .card__index:hover .circle .logo__index{
-        transform: scale(0);
-        transition-delay: 0s;
-    }
-    
-    .content__index{
-        position: relative;
-        width: 50%;
-        left: 20%;
-        padding: 20px 20px 20px 40px;
-        opacity: 0;
-        transition: 0.5s;
-        visibility: hidden;
-        
-    
-    }
-    
-     .card__index:hover .content__index{
-        left: 0;
-        opacity: 1;
-        visibility: visible;
-        transition-delay: 0.5s;
-     }
-    
-     .content__index h2{
-        color:rgb(0, 0, 0) ;
-        text-transform: uppercase;
-        font-size: 2.5em;
-        line-height: 1em;
-     }
-    
-     .content__index p{
-        color: rgb(0, 0, 0);
-        
-     }
-    
-     .content__index a{
-        position: relative;
-        color: #111;
-        
-        padding: 10px 20px;
-        border-radius: 10px;
-        margin-top: 10px;
-        display: inline-block;
-        text-decoration: none;
-        font-weight: 500;
-     }
-    
-     .card__index .product_img{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0);
-        height: 450px;
-        transition: 0.5s;
-        transition-delay: 0s;
-     }
-    
-     .card__index:hover .product_img{
-        left: 72%;
-        transform: translate(-50%, -50%) scale(1);
-        transition-delay: 0.5s;
-     }
-
-     @media screen and(max-width:520px) {
-        .card__index .product_img{
-            display: none;
-        }
-
-        .content__index{
-            margin: 5em;
-
-
-        }
-     }
 
 
 
@@ -496,12 +357,30 @@ textarea{
 
 .pie-pagina{
    @include pie-pagina
+   
+      
+}
+
+.pie-pagina{
+    display: inline-block;
+    
 }
 
 .img-footer{
    @include img-footer;
+    width: 200px;
+    display: flex;
+    margin-top: -100px;
+
+}
+
+.p__footer{
+    
+    display: flex;
+        
     
 }
+
 
 .h2-footer{
     text-transform: uppercase;
@@ -513,11 +392,11 @@ textarea{
     @include fa;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:850px){
     .pie-pagina{
 
    background-color: $back-color-footer;
-          
+        display: inline-block;  
     }
     .img-footer{
        margin-right: 0;
@@ -526,6 +405,7 @@ textarea{
     }
     .fa{
        @include flex-footer;
+        display: inline-block;
     
     }
 }
