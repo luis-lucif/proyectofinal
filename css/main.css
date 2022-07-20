@@ -292,15 +292,10 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
   padding: 100px; }
 
-.pie-pagina {
-  display: inline-block; }
-
 .img-footer {
   width: 250px;
   margin-right: 100px;
-  width: 200px;
-  display: flex;
-  margin-top: -100px; }
+  width: 200px; }
 
 .p__footer {
   display: flex; }
@@ -320,8 +315,7 @@ textarea {
     background-color: #056d21;
     display: inline-block; }
   .img-footer {
-    margin-right: 0;
-    margin-left: -100px; }
+    margin-left: 20px; }
   .fa {
     display: flex;
     flex-direction: initial;

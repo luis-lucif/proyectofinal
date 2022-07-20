@@ -361,16 +361,13 @@ textarea{
       
 }
 
-.pie-pagina{
-    display: inline-block;
-    
-}
+
 
 .img-footer{
    @include img-footer;
     width: 200px;
-    display: flex;
-    margin-top: -100px;
+   
+    
 
 }
 
@@ -399,8 +396,8 @@ textarea{
         display: inline-block;  
     }
     .img-footer{
-       margin-right: 0;
-       margin-left: -100px;
+       
+       margin-left: 20px; 
        
     }
     .fa{
