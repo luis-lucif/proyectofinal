@@ -167,11 +167,7 @@
   .container__cover .png {
     display: none; }
   .container__cover .text__index {
-    margin: auto; }
-  .cover {
-    width: 350px; }
-  .container__cover {
-    margin: -2em; } }
+    margin: auto; } }
 
 /* index */
 .conteiner__index {
