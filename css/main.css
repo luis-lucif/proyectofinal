@@ -286,11 +286,9 @@ textarea {
 
 /* footer */
 .pie-pagina {
-  background-color: #056d21;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 100px; }
+  display: flex;
+  padding: 2em;
+  background-color: #056d21; }
 
 .img-footer {
   width: 250px;
@@ -313,9 +311,10 @@ textarea {
 @media screen and (max-width: 850px) {
   .pie-pagina {
     background-color: #056d21;
-    display: inline-block; }
+    display: inline-block;
+    padding: 3em; }
   .img-footer {
-    margin-left: 20px; }
+    margin-left: 5px; }
   .fa {
     display: flex;
     flex-direction: initial;
