@@ -230,13 +230,22 @@
   transform: translate(-50%, -50%) scale(1);
   transition-delay: 0.5s; }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 700px) {
   .card__index .product_img {
     display: none; }
   .content__index {
     margin: 5em; }
   .card__index:hover {
     width: 500px; } }
+
+@media screen and (max-width: 520px) {
+  .card__index:hover {
+    width: 300px; }
+  .content__index h2 {
+    display: none; }
+  .content__index p {
+    font-size: 15px;
+    margin-top: -2em; } }
 
 /* formulario */
 .body-formulario {
