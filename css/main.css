@@ -7,31 +7,6 @@
   transition: 1s; }
 
 /*index*/
-.header-index {
-  width: 100%;
-  height: 100vh;
-  background-image: url(/img/header.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.banner-text {
-  padding: 0 20px;
-  text-align: center; }
-
-.banner-text h1 {
-  font-size: 50px;
-  margin-bottom: 30px;
-  color: #0c6022;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 10px; }
-
-.banner-text p {
-  font-size: 20px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 10px #0c6022; }
-
 .card__index {
   position: relative;
   width: 300px;
@@ -167,7 +142,12 @@
   .container__cover .png {
     display: none; }
   .container__cover .text__index {
-    margin: auto; } }
+    margin: auto; }
+  .cover {
+    width: 250px; }
+  main {
+    margin-left: 10px;
+    margin-top: -50px; } }
 
 /* index */
 .conteiner__index {
@@ -240,12 +220,13 @@
 
 @media screen and (max-width: 520px) {
   .card__index:hover {
+    align-items: center;
     width: 300px; }
   .content__index h2 {
     display: none; }
   .content__index p {
-    font-size: 15px;
-    margin-top: -2em; } }
+    font-weight: bold;
+    font-size: 15px; } }
 
 /* formulario */
 .body-formulario {
@@ -325,8 +306,9 @@ textarea {
 
 @media screen and (max-width: 520px) {
   .row {
-    margin-left: 7rem;
-    margin-top: 1rem; } }
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-right: 5rem; } }
 
 /* bio */
 .container-bio1 {

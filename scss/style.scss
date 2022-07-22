@@ -130,6 +130,19 @@
         .container__cover .text__index{
             margin: auto;
         }
+
+        .cover{
+            width: 250px; 
+            
+        }
+
+       main{
+        margin-left: 10px;
+        margin-top: -50px;
+
+        
+
+       }
            
     }
 
@@ -253,7 +266,10 @@
 
  @media screen and(max-width:520px){
     .card__index:hover{
+        align-items: center;
         width: 300px;
+        
+        
     }
 
     .content__index h2 {
@@ -261,11 +277,14 @@
     }
 
     .content__index p{
-        
+        font-weight: bold;
         font-size: 15px;
-        margin-top: -2em;
+        
         
     }
+
+  
+
  }
     
 
@@ -379,14 +398,16 @@ textarea{
 .body-bibliografia{
     background-image: url(/img/bobliografia2.jpg);
     
+    
+    
 }
 
 @media screen and (max-width: 520px) {
     
     .row{
-        margin-left: 7rem;
+        margin-left: 5rem;
         margin-top: 1rem;
-        
+        margin-right: 5rem;
     }
 
 }
